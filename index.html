@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/quaries.css" />
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar-wrapper">
+          <a href="#" class="logo"><img src="./assets/images/logo.svg" alt="logo-W." /></a>
+          <nav class="navbar">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">New</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Trending</a></li>
+              <li><a href="#">Categories</a></li>
+            </ul>
+          </nav>
+          <div class="overlay"></div>
+          <button class="btn-close" id="closeBtn" aria-label="close button" aria-expanded="false">
+            <img src="./assets/images/icon-menu-close.svg" alt="close menu" />
+          </button>      
+          <button class="btn-hamburger" aria-label="button menu" aria-expanded="false" id="menuBtn">
+            <img src="./assets/images/icon-menu.svg" alt="button menu" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container grid">
+          <div class="item-grid box1">
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="web 3 desktop" />
+          </div>
+          <div class="item-grid box2">
+            <div class="box2-left">
+              <h1>The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="box2-right">
+              <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+              <button class="btn-readMore">READ MORE</button>
+            </div>
+          </div>
+          <div class="item-grid box3">
+            <h2 class="fontNew">New</h2>
+            <div class="wrap-new">
+              <h3>Hydrogen VS Electric Cars</h3>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              <hr />
+              <h3>The Downsides of AI Artistry</h3>
+              <p>What are the possible adverse effects of on-demand AI image generation?</p>
+              <hr />
+              <h3>Is VC Funding Drying Up?</h3>
+              <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="list">
+          <div class="list-item">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs" />
+            <div class="list-wrap">
+              <h2>01</h2>
+              <h3>Reviving Retro PCs</h3>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <div class="list-item">
+            <img src="./assets/images/image-top-laptops.jpg" alt="Top Laptops" />
+            <div class="list-wrap">
+              <h2>02</h2>
+              <h3>Top 10 Laptops of 2022</h3>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <div class="list-item">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="Gaming Growth" />
+            <div class="list-wrap">
+              <h2>03</h2>
+              <h3>The Growth of Gaming</h3>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./Javascript/main.js"></script>
+  </body>
+</html>

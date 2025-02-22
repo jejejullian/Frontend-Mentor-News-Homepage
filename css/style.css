@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "inter";
+  src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary color */
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+
+  /* neutral color */
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+
+  /* font family */
+  --font-inter: "inter";
+  --font-400: 400;
+  --font-700: 700;
+  --font-800: 800;
+  --size-paragrap: 15px;
+}
+
+body {
+  font-family: var(--font-inter);
+  color: var(--Very-dark-blue);
+  min-height: 100vh;
+  line-height: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.list-wrap h2{
+  color: var(--soft-red);
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+h3 {
+  cursor: pointer;
+}
+
+.wrap-new p{
+  color: var(--Grayish-blue);
+}
+
+.fontNew {
+  font-size: 2.5rem;
+  font-weight: var(--font-700);
+  color: var(--soft-orange);
+}
+
+p {
+  color: var(--Dark-grayish-blue);
+}
+
+.btn-readMore {
+  display: inline-block;
+  font-weight: var(--font-800);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 16px 36px;
+  background-color: var(--soft-red);
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.btn-readMore:click {
+  background-color: var(--soft-orange);
+}
+
+.btn-close, .overlay {
+  display: none;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ff6347;
+}
+
+.btn-hamburger{
+  display: none;
+}
+
+
+
+/* GRID CONTENT */
+.grid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "box1 box3"
+    "box2 box3";
+}
+
+.item-grid.box1 {
+  grid-area: box1;
+}
+
+.item-grid.box1 img {
+  object-fit: cover;
+}
+
+.item-grid.box2 {
+  grid-area: box2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between; 
+  gap: 2rem; 
+  align-items: start;
+}
+
+.item-grid.box2 .box2-right{
+  line-height: 1.5;
+}
+
+.item-grid.box3 {
+  grid-area: box3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  background-color: var(--Very-dark-blue);
+  color: var(--Off-white);
+  padding: 2rem;
+}
+
+.item-grid.box3 .wrap-new{
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+/*GRID CONTENT LIST */
+.list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2rem;
+}
+
+.list-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.list-wrap{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.list-item img{
+  width: 100px;
+  height: auto;
+}
+
+
+/* ACTIVE STATE */
+.btn-readMore.active{
+  background: #000;
+  color: white;
+}
+
+.wrap-new h3.active{
+  color: hsl(35, 77%, 62%);;
+}
+
+.list-wrap h3.active{
+  color: hsl(5, 85%, 63%);;
+}
+
