@@ -23,6 +23,8 @@ Your users should be able to:
 
 Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
 
+## Live DEMO 👉 : https://jejejullian.github.io/Frontend-Mentor-News-Homepage/
+
 ## Where to find everything
 
 Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
